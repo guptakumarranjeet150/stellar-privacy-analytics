@@ -4,7 +4,7 @@
   "description": "Stellar blockchain smart contracts for privacy-preserving analytics",
   "main": "index.js",
   "scripts": {
-    "build": "node init && cargo build --target wasm32-unknown-unknown --release",
+    "build": "cargo build --target wasm32-unknown-unknown --release",
     "compile": "cargo build --target wasm32-unknown-unknown --release",
     "deploy:testnet": "npm run build && ts-node scripts/deploy.ts testnet",
     "deploy:mainnet": "npm run build && ts-node scripts/deploy.ts mainnet",
